@@ -1,358 +1,318 @@
 const wordList = [
     {
-        'word': "elephant",
-        'hint': "A large mammal with a trunk."
+        'word': "bohemian rhapsody",
+        'hint': "An iconic rock opera by Queen."
     },
     {
-        'word': "python",
-        'hint': "A type of programming language, also a large snake."
+        'word': "shape of you",
+        'hint': "A popular dance-pop track by Ed Sheeran."
     },
     {
-        'word': "ocean",
-        'hint': "A large body of saltwater that covers much of the Earth."
+        'word': "hotel california",
+        'hint': "A classic rock song by Eagles."
     },
     {
-        'word': "sunflower",
-        'hint': "A tall plant with a large yellow flower that follows the sun."
+        'word': "rolling in the deep",
+        'hint': "A powerful ballad by Adele."
     },
     {
-        'word': "giraffe",
-        'hint': "The tallest land animal with a very long neck."
+        'word': "thriller",
+        'hint': "A hit pop song by Michael Jackson, known for its spooky music video."
     },
     {
-        'word': "volcano",
-        'hint': "A mountain that erupts with lava."
+        'word': "blinding lights",
+        'hint': "A synth-pop song by The Weeknd."
     },
     {
-        'word': "keyboard",
-        'hint': "A computer input device with keys."
+        'word': "stairway to heaven",
+        'hint': "A legendary rock ballad by Led Zeppelin."
     },
     {
-        'word': "strawberry",
-        'hint': "A small red fruit with seeds on the outside."
+        'word': "smells like teen spirit",
+        'hint': "An iconic grunge anthem by Nirvana."
     },
     {
-        'word': "rainbow",
-        'hint': "An arc of colors seen in the sky after rain."
+        'word': "shake it off",
+        'hint': "A catchy pop song by Taylor Swift."
     },
     {
-        'word': "library",
-        'hint': "A place where books are kept."
+        'word': "someone like you",
+        'hint': "A heartfelt piano ballad by Adele."
     },
     {
-        'word': "astronaut",
-        'hint': "A person trained to travel in space."
+        'word': "yesterday",
+        'hint': "A soft, melancholic tune by The Beatles."
     },
     {
-        'word': "bicycle",
-        'hint': "A vehicle with two wheels that you pedal to move."
+        'word': "hello",
+        'hint': "A soulful comeback single by Adele."
     },
     {
-        'word': "mountain",
-        'hint': "A large natural elevation of the earth's surface."
-    },
-    {
-        'word': "penguin",
-        'hint': "A flightless bird that lives in cold regions."
-    },
-    {
-        'word': "pyramid",
-        'hint': "A monumental structure with a square or triangular base and sloping sides."
-    },
-    {
-        'word': "clock",
-        'hint': "A device used to tell time."
-    },
-    {
-        'word': "balloon",
-        'hint': "An inflatable object usually filled with air or helium."
-    },
-    {
-        'word': "kangaroo",
-        'hint': "A marsupial from Australia that hops on its hind legs."
-    },
-    {
-        'word': "computer",
-        'hint': "An electronic device for storing and processing data."
-    },
-    {
-        'word': "dragon",
-        'hint': "A mythical creature that breathes fire."
-    },
-    {
-        'word': "island",
-        'hint': "A piece of land surrounded by water."
-    },
-    {
-        'word': "jungle",
-        'hint': "A dense forest, usually in tropical regions."
-    },
-    {
-        'word': "koala",
-        'hint': "A tree-dwelling marsupial native to Australia."
-    },
-    {
-        'word': "ladder",
-        'hint': "A device used for climbing up or down."
-    },
-    {
-        'word': "moose",
-        'hint': "A large animal with antlers, found in northern regions."
-    },
-    {
-        'word': "nebula",
-        'hint': "A cloud of gas and dust in space."
-    },
-    {
-        'word': "octopus",
-        'hint': "A sea creature with eight arms."
-    },
-    {
-        'word': "piano",
-        'hint': "A large musical instrument with keys."
-    },
-    {
-        'word': "quartz",
-        'hint': "A hard, crystalline mineral composed of silicon and oxygen."
-    },
-    {
-        'word': "robot",
-        'hint': "A machine capable of carrying out a series of actions automatically."
-    },
-    {
-        'word': "satellite",
-        'hint': "An artificial body placed in orbit around the earth."
-    },
-    {
-        'word': "telescope",
-        'hint': "An optical instrument for viewing distant objects."
-    },
-    {
-        'word': "unicorn",
-        'hint': "A mythical horse with a single horn on its forehead."
-    },
-    {
-        'word': "violin",
-        'hint': "A stringed musical instrument played with a bow."
-    },
-    {
-        'word': "whale",
-        'hint': "A large marine mammal."
-    },
-    {
-        'word': "xylophone",
-        'hint': "A musical instrument made of wooden bars."
-    },
-    {
-        'word': "yacht",
-        'hint': "A medium-sized sailing boat."
-    },
-    {
-        'word': "zebra",
-        'hint': "An African wild horse with black-and-white stripes."
-    },
-    {
-        'word': "avocado",
-        'hint': "A green fruit with a large seed and creamy texture."
-    },
-    {
-        'word': "ballet",
-        'hint': "A form of dance with precise and highly formalized steps."
-    },
-    {
-        'word': "canyon",
-        'hint': "A deep gorge, typically one with a river flowing through it."
-    },
-    {
-        'word': "dinosaur",
-        'hint': "A large extinct reptile from the Mesozoic era."
-    },
-    {
-        'word': "emerald",
-        'hint': "A precious green gemstone."
-    },
-    {
-        'word': "falcon",
-        'hint': "A bird of prey known for its speed."
-    },
-    {
-        'word': "glacier",
-        'hint': "A slowly moving mass of ice."
-    },
-    {
-        'word': "hedgehog",
-        'hint': "A small mammal with spines on its back."
-    },
-    {
-        'word': "igloo",
-        'hint': "A dome-shaped hut made of snow."
-    },
-    {
-        'word': "jellyfish",
-        'hint': "A sea creature with a gelatinous body and tentacles."
-    },
-    {
-        'word': "kite",
-        'hint': "A light frame covered with paper or cloth, flown in the wind."
-    },
-    {
-        'word': "lantern",
-        'hint': "A portable light source."
-    },
-    {
-        'word': "mermaid",
-        'hint': "A mythical creature with the upper body of a woman and the tail of a fish."
-    },
-    {
-        'word': "noodle",
-        'hint': "A long, thin strip of dough typically used in cooking."
-    },
-    {
-        'word': "obelisk",
-        'hint': "A tall, four-sided stone monument."
-    },
-    {
-        'word': "parrot",
-        'hint': "A colorful bird known for mimicking sounds."
-    },
-    {
-        'word': "quokka",
-        'hint': "A small marsupial native to Australia, known for its smile."
-    },
-    {
-        'word': "rhinoceros",
-        'hint': "A large mammal with one or two horns on its nose."
-    },
-    {
-        'word': "sphinx",
-        'hint': "A mythical creature with a lion's body and a human head."
-    },
-    {
-        'word': "tornado",
-        'hint': "A violently rotating column of air."
+        'word': "bad guy",
+        'hint': "A quirky pop hit by Billie Eilish."
     },
     {
         'word': "umbrella",
-        'hint': "A device used for protection from rain or sun."
+        'hint': "A pop hit by Rihanna featuring Jay-Z."
     },
     {
-        'word': "vulture",
-        'hint': "A large bird of prey that feeds on carrion."
+        'word': "uptown funk",
+        'hint': "A funky dance track by Mark Ronson featuring Bruno Mars."
     },
     {
-        'word': "walrus",
-        'hint': "A large marine mammal with tusks."
+        'word': "like a rolling stone",
+        'hint': "A rock classic by Bob Dylan."
     },
     {
-        'word': "yogurt",
-        'hint': "A dairy product made by fermenting milk."
+        'word': "hey jude",
+        'hint': "A sing-along classic by The Beatles."
     },
     {
-        'word': "zeppelin",
-        'hint': "A large airship."
+        'word': "all of me",
+        'hint': "A romantic ballad by John Legend."
     },
     {
-        'word': "amber",
-        'hint': "A fossilized tree resin, often used in jewelry."
+        'word': "blowin' in the wind",
+        'hint': "A folk anthem by Bob Dylan."
     },
     {
-        'word': "beehive",
-        'hint': "A structure where bees live and produce honey."
+        'word': "bad romance",
+        'hint': "A pop anthem by Lady Gaga."
     },
     {
-        'word': "cactus",
-        'hint': "A spiny plant that grows in deserts."
+        'word': "bohemian like you",
+        'hint': "A garage rock song by The Dandy Warhols."
     },
     {
-        'word': "dolphin",
-        'hint': "A highly intelligent marine mammal."
+        'word': "rolling stones",
+        'hint': "A reference to a legendary rock band."
     },
     {
-        'word': "eagle",
-        'hint': "A bird of prey with sharp eyesight."
+        'word': "american pie",
+        'hint': "A folk rock ballad by Don McLean."
     },
     {
-        'word': "flamingo",
-        'hint': "A wading bird with pink or reddish feathers."
+        'word': "toxic",
+        'hint': "A dance-pop track by Britney Spears."
     },
     {
-        'word': "galaxy",
-        'hint': "A system of millions or billions of stars."
+        'word': "wonderwall",
+        'hint': "An iconic Britpop song by Oasis."
     },
     {
-        'word': "hedgehog",
-        'hint': "A small mammal with spines on its back."
+        'word': "dancing queen",
+        'hint': "A disco classic by ABBA."
     },
     {
-        'word': "iris",
-        'hint': "A type of flowering plant, also part of the eye."
+        'word': "billie jean",
+        'hint': "A groundbreaking hit by Michael Jackson."
     },
     {
-        'word': "jaguar",
-        'hint': "A large wild cat native to the Americas."
+        'word': "sweet child o' mine",
+        'hint': "A rock classic by Guns N' Roses."
     },
     {
-        'word': "kiwi",
-        'hint': "A small flightless bird from New Zealand, also a fruit."
+        'word': "call me maybe",
+        'hint': "A viral pop song by Carly Rae Jepsen."
     },
     {
-        'word': "llama",
-        'hint': "A domesticated pack animal from South America."
+        'word': "let it be",
+        'hint': "A famous song by The Beatles."
     },
     {
-        'word': "mango",
-        'hint': "A sweet tropical fruit with a pit."
+        'word': "imagine",
+        'hint': "A peace anthem by John Lennon."
     },
     {
-        'word': "nectar",
-        'hint': "A sweet liquid produced by flowers."
+        'word': "god's plan",
+        'hint': "A chart-topping rap track by Drake."
     },
     {
-        'word': "ostrich",
-        'hint': "The largest bird, which cannot fly."
+        'word': "i will always love you",
+        'hint': "A powerful ballad by Whitney Houston."
     },
     {
-        'word': "peacock",
-        'hint': "A bird known for its colorful, fan-like tail."
+        'word': "boombayah",
+        'hint': "A K-pop debut single by Blackpink."
     },
     {
-        'word': "quiver",
-        'hint': "A container for holding arrows."
+        'word': "my heart will go on",
+        'hint': "A theme song from Titanic by Celine Dion."
     },
     {
-        'word': "raccoon",
-        'hint': "A nocturnal mammal known for its black 'mask'."
+        'word': "gangnam style",
+        'hint': "A viral dance hit by PSY."
     },
     {
-        'word': "sapphire",
-        'hint': "A precious blue gemstone."
+        'word': "i want it that way",
+        'hint': "A signature pop song by Backstreet Boys."
     },
     {
-        'word': "tiger",
-        'hint': "A large feline with black stripes."
+        'word': "radioactive",
+        'hint': "An alternative rock hit by Imagine Dragons."
     },
     {
-        'word': "urchin",
-        'hint': "A small, spiny sea creature."
+        'word': "skyfall",
+        'hint': "A James Bond theme by Adele."
     },
     {
-        'word': "violet",
-        'hint': "A small plant with purple or blue flowers."
+        'word': "take on me",
+        'hint': "A synth-pop song by A-ha."
     },
     {
-        'word': "wolf",
-        'hint': "A wild canine animal known for howling."
+        'word': "despacito",
+        'hint': "A reggaeton hit by Luis Fonsi and Daddy Yankee."
     },
     {
-        'word': "xenon",
-        'hint': "A chemical element used in lighting."
+        'word': "happy",
+        'hint': "A feel-good song by Pharrell Williams."
     },
     {
-        'word': "yak",
-        'hint': "A long-haired bovine found in Asia."
+        'word': "roar",
+        'hint': "A pop empowerment anthem by Katy Perry."
     },
     {
-        'word': "zephyr",
-        'hint': "A soft, gentle breeze."
+        'word': "bad blood",
+        'hint': "A pop hit by Taylor Swift featuring Kendrick Lamar."
+    },
+    {
+        'word': "shallow",
+        'hint': "A duet by Lady Gaga and Bradley Cooper from A Star Is Born."
+    },
+    {
+        'word': "all the stars",
+        'hint': "A track by Kendrick Lamar and SZA for Black Panther."
+    },
+    {
+        'word': "purple rain",
+        'hint': "A song by Prince, also the name of his 1984 album and movie."
+    },
+    {
+        'word': "faded",
+        'hint': "A hit electronic song by Alan Walker."
+    },
+    {
+        'word': "one dance",
+        'hint': "A summer hit by Drake."
+    },
+    {
+        'word': "senorita",
+        'hint': "A romantic duet by Shawn Mendes and Camila Cabello."
+    },
+    {
+        'word': "lean on",
+        'hint': "A dance track by Major Lazer and DJ Snake featuring MØ."
+    },
+    {
+        'word': "stitches",
+        'hint': "A hit by Shawn Mendes."
+    },
+    {
+        'word': "rockstar",
+        'hint': "A rap track by Post Malone featuring 21 Savage."
+    },
+    {
+        'word': "believer",
+        'hint': "A motivational anthem by Imagine Dragons."
+    },
+    {
+        'word': "god is a woman",
+        'hint': "A pop track by Ariana Grande."
+    },
+    {
+        'word': "havana",
+        'hint': "A catchy hit by Camila Cabello featuring Young Thug."
+    },
+    {
+        'word': "wrecking ball",
+        'hint': "A dramatic ballad by Miley Cyrus."
+    },
+    {
+        'word': "lucid dreams",
+        'hint': "A hit by Juice WRLD."
+    },
+    {
+        'word': "thank u, next",
+        'hint': "A breakup anthem by Ariana Grande."
+    },
+    {
+        'word': "sunflower",
+        'hint': "A song by Post Malone and Swae Lee from Spider-Man: Into the Spider-Verse."
+    },
+    {
+        'word': "old town road",
+        'hint': "A viral country rap by Lil Nas X featuring Billy Ray Cyrus."
+    },
+    {
+        'word': "closer",
+        'hint': "A catchy song by The Chainsmokers featuring Halsey."
+    },
+    {
+        'word': "hotline bling",
+        'hint': "A viral track by Drake."
+    },
+    {
+        'word': "sicko mode",
+        'hint': "A hip-hop hit by Travis Scott."
+    },
+    {
+        'word': "in the end",
+        'hint': "A rock song by Linkin Park."
+    },
+    {
+        'word': "applause",
+        'hint': "A hit single by Lady Gaga."
+    },
+    {
+        'word': "paradise",
+        'hint': "A dreamy track by Coldplay."
+    },
+    {
+        'word': "yellow",
+        'hint': "A classic song by Coldplay."
+    },
+    {
+        'word': "fight song",
+        'hint': "A motivational anthem by Rachel Platten."
+    },
+    {
+        'word': "chandelier",
+        'hint': "A powerful vocal track by Sia."
+    },
+    {
+        'word': "team",
+        'hint': "A track by Lorde."
+    },
+    {
+        'word': "cheap thrills",
+        'hint': "A dance track by Sia featuring Sean Paul."
+    },
+    {
+        'word': "diamonds",
+        'hint': "A song by Rihanna."
+    },
+    {
+        'word': "wildest dreams",
+        'hint': "A soft pop song by Taylor Swift."
+    },
+    {
+        'word': "stressed out",
+        'hint': "A track by Twenty One Pilots."
+    },
+    {
+        'word': "shape of my heart",
+        'hint': "A track by Sting."
+    },
+    {
+        'word': "blank space",
+        'hint': "A hit by Taylor Swift."
+    },
+    {
+        'word': "when i was your man",
+        'hint': "A piano ballad by Bruno Mars."
+    },
+    {
+        'word': "blessings",
+        'hint': "A song by Big Sean featuring Drake."
     }
 ]
